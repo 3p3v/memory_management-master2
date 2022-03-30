@@ -38,6 +38,7 @@ int main(int argc, char* argv[])
     }
     catch (std::logic_error& e)
     {
+        delete rsc;
         std::cout << e.what() << std::endl;
     }
     return 0;
